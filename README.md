@@ -39,7 +39,7 @@ No specific installation steps are required. Simply execute the provided executa
 
 ## Troubleshooting
 
-For issues or questions, refer to the Troubleshooting section or contact [your contact information].
+For issues or questions, refer to the Troubleshooting section or contact kiglerr#gmail.com.
 
 ## Exit
 
