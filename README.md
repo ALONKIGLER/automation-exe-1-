@@ -1,28 +1,46 @@
-# automation-exe-1-READ ME:
+# automation-exe-1 README
 
-1. הזן :
-2. בחר האם 16 או 2 או X :
-   • אם בחרת 16- מעביר מהקסדצימלי (בסיס 16) לבינארי
-   • אם בחרת 2- נמיר מבינארי להקסדצימלי
-   • אם בחרת X: נצא מן המערכת
-3. אם הוזן 2:
-   a. המערכת תבדוק האם המספר שהוזן תקין (אם יש ערך שונה מאפס או אחד, לא יהיה ניתן להמשיך)
-   b. אם המספר תקין- המערכת תבדוק שכמות האיברים מתחלקת ל-4, אם לא, תוסיף אפסים משמאלו עד שיתחלק.
-   c. יוגדרו מספר ערכים:
-   • BitPos- המיקום בתוך רביעיית איברים
-   • StartPos- בודק שעברנו על כל האיברים במספר
-   • hexString- המספר ההקסדצימלי שיוחזר
-   d. עבור כל מספר ברביעיית איברים:
-   • נעלה בחזקת 2 את המיקום שלו ונכפיל בערך שלו
-   • נסכום את כל הערכים שקיבלנו
-   e. אם הערך שקיבלנו קטן מ-10: נוסיף אותו ל- hexString. אחרת- נמיר אותו לאות בעזרת שימוש בקוד ASCII ורק לאחר מכן נוסיף אותו ל- hexString.
-   f. אחרי שעברנו על כל הרביעיות במספר שהוזן- נחזיר hexString
-4. אם הוזן 16:
-   קודם נמיר מהקסדצימלי לדצימאלי ואח"כ מדצימאלי לבינארי.
-   a. המערכת תבדוק האם המספר שהוזן תקין (אם יש ערך שאינו מספר בין 0-9 או אות בין A-F, לא יהיה ניתן להמשיך)
-   b. אם המספר תקין נבדוק האם מדובר באות:
-   • אם מספר -ישר נמיר לבינארי:
-   • נחלק את המספר ב-2 ,נוסיף את השארית שקיבלנו למחרוזת return value ושוב את התוצאה נחלק ב-2 ונוסיף את השארית למחרוזת וכך הלאה עד שהתוצאה אינה מתאפסת.
-   • אם אות- נמיר אותה למספר עשרוני באמצעות קוד ASCII (נחסר 55).
-   • ואת המספר העשרוני נמיר לבינארי.
-   c.
+## Introduction
+
+This README provides instructions for using the automation-exe-1 tool, designed for converting numbers between binary, hexadecimal, and decimal bases. The tool supports both 16-to-binary and 2-to-hexadecimal conversions.
+
+## Usage
+
+1. **Input:**
+   - Enter a number.
+   - Choose between 16, 2, or X:
+     - If 16 is selected: convert from hexadecimal to binary.
+     - If 2 is selected: convert from binary to hexadecimal.
+     - If X is selected: exit the system.
+
+2. **If 2 is selected:**
+   a. Validate the input to ensure it is a valid binary number.
+   b. If valid, check if the number of digits is divisible by 4; if not, pad zeros to the left.
+   c. Define values:
+      - BitPos: position within the group of 4 bits.
+      - StartPos: ensure all digits in the number are processed.
+      - hexString: resulting hexadecimal number.
+   d. For each group of 4 bits:
+      - Raise 2 to the power of the bit position and multiply it by the bit value.
+      - Sum all values obtained.
+   e. If the sum is < 10, add to hexString; else, convert to ASCII character and add to hexString.
+   f. Once all groups are processed, return hexString.
+
+3. **If 16 is selected:**
+   a. Convert hexadecimal to decimal and then to binary.
+   b. Validate input to ensure it is a valid hexadecimal number.
+   c. If a number, convert to binary by dividing by 2 and appending remainders until result is 0.
+   d. If a letter, convert to decimal using ASCII (subtracting 55).
+   e. Convert decimal to binary.
+
+## Installation
+
+No specific installation steps are required. Simply execute the provided executable file.
+
+## Troubleshooting
+
+For issues or questions, refer to the Troubleshooting section or contact [your contact information].
+
+## Exit
+
+To exit the system when prompted, select X.
