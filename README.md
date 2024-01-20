@@ -14,9 +14,9 @@ This README provides instructions for using the automation-exe-1 tool, designed 
      - If X is selected: exit the system.
 
 2. **If 2 is selected:**
-   a. Validate the input to ensure it is a valid binary number.
-   b. If valid, check if the number of digits is divisible by 4; if not, pad zeros to the left.
-   c. Define values:
+   1. Validate the input to ensure it is a valid binary number.
+   2. If valid, check if the number of digits is divisible by 4; if not, pad zeros to the left.
+   3. Define values:
       - BitPos: position within the group of 4 bits.
       - StartPos: ensure all digits in the number are processed.
       - hexString: resulting hexadecimal number.
