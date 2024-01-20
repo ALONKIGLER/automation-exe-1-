@@ -27,11 +27,11 @@ This README provides instructions for using the automation-exe-1 tool, designed 
    f. Once all groups are processed, return hexString.
 
 3. **If 16 is selected:**
-   a. Convert hexadecimal to decimal and then to binary.
-   b. Validate input to ensure it is a valid hexadecimal number.
-   c. If a number, convert to binary by dividing by 2 and appending remainders until result is 0.
-   d. If a letter, convert to decimal using ASCII (subtracting 55).
-   e. Convert decimal to binary.
+   1. Convert hexadecimal to decimal and then to binary.
+   2. Validate input to ensure it is a valid hexadecimal number.
+   3. If a number, convert to binary by dividing by 2 and appending remainders until result is 0.
+   4. If a letter, convert to decimal using ASCII (subtracting 55).
+   5. Convert decimal to binary.
 
 ## Installation
 
